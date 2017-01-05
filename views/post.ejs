@@ -1,0 +1,8 @@
+<%- include header %>
+<form method="post" id="post">
+标题：<input type="text" name="title" value=<%- result.title %>><br />
+正文：<br />
+<textarea name='post' rows="17"><%- result.post %></textarea><br />
+<input type="submit" value="发表"  />
+</form>
+<%- include footer %>

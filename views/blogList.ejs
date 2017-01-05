@@ -1,0 +1,12 @@
+<%- include header %>
+<ul id="blogList">
+<% posts.forEach(function(val){%>
+<li><a href=<%- "http://localhost:3000/fullPost?index="+eval(val.index+1) %>><%- val.title+'</a>' %>
+<% if(user && user.name==val.name) {%>
+<span class="edit" data-index=<%- val.index%>>[编辑]</span><span class="delete" data-index=<%- val.index%>>[删除]</span>
+<%}%>
+<span class="time"><%- val.time.day %></span>
+</li>
+<%})%>
+</ul>
+<%-include footer%>

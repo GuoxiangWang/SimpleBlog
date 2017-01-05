@@ -1,0 +1,10 @@
+<%- include header %>
+<% posts.forEach(function(post,index){%>
+<p><h2><a href=<%= "/fullPost?index="+eval(post.index+1) %> ><%= post.title %></a></h2></p>
+<p class="info">
+作者：<a href=<%- "/blogList?user="+post.name %>><%= post.name %></a>
+日期：<span class="time"><%- post.time.minute %></span>
+</p>
+<p class='intro'><%- post.post.substr(0,70)+"...." %></p>
+<%})%>
+<%- include footer %>

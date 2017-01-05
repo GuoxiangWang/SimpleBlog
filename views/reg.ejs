@@ -1,0 +1,31 @@
+<%- include header %>
+<form method='post'>
+<dl>
+<dt></dt>
+<dd>
+<% if(success){%>
+	<%= success %>
+<% } %>
+<% if(error){ %>
+	<%= error %>
+<% } %>
+</dd>
+<dt class="required"><span>用户名：</span></dt>
+<dd>
+<input type="text" name="name" required="required" placeholder="请输入用户名"/><br />
+</dd>
+<br/>
+<dt></dt><dd  class="tips">6~18个字符，可使用字母、数字且以字母开头</dd><br/>
+
+<dt class="required">密码：</dt><dd><input type="password" name="password" required="required" /></dd><br />
+<dt></dt><dd  class="tips">6~16个字符，区分大小写</dd><br/>
+
+<dt class="required">确认密码：</dt><dd><input type="password" name="password-repeat" required="required"/></dd><br/>
+<dt></dt><dd  class="tips">请再次填写密码</dd><br/>
+
+<dt>邮箱：</dt><dd><input type="email" name="email"/></dd><br/>
+
+<dt></dt><dd><input type="submit" name="submit" value="注册" /><input type="reset" name="reset" value="重置" /></dd>
+</dl>
+</form>
+<%- include footer %>

@@ -1,0 +1,16 @@
+.container{
+	margin-top:1em;
+	width:100%;
+}
+.col-lg-3{
+	text-align:center;
+	height:128px;
+	border:solid thin #e2e3e4;
+	cursor:pointer;
+}
+.row{
+	padding-left:5%;
+}
+iframe body{
+	zoom:10%;
+}

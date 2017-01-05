@@ -1,0 +1,21 @@
+<%- include header %>
+<p class="info">作者：<a href=<%- "/blogList?user="+name %>><%- name %></a> 日期：<span class="time"><%- time %></span></p>
+<xmp class="post"><%- post %></xmp>
+
+<div class="comments">
+<b>已有评论：</b><br />
+<% comments.forEach(function(comment){ %>
+<p><a href=<%- "/blogList?user="+comment.name %>><%- comment.name%></a> 发表于：<span class="time"><%- comment.time.minute%></span></p>
+<p class="info"><%- comment.comment %></p>
+<% }) %>
+</div>
+
+<% if(user) {%>
+<span>评论：
+<hr />
+<form method="post">
+<textarea rows="6" name="comment"></textarea><br/>
+<input type="submit" name="submit" value="  发  表  " />
+</form>
+<% } %>
+<%- include footer %>

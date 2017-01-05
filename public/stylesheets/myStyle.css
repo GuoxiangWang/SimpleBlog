@@ -1,0 +1,53 @@
+.nav li{
+	width:7.5em;
+	text-align:center;
+}
+.nav{
+	margin-bottom:1em;
+	position:relative;
+	left:-2.5em;
+}
+.tips{
+	color:#D3D3D3;
+	font-size:0.6em;
+	margin-bottom:1em;
+}
+.required:before{
+	content:"*";
+	color:red;
+	vertical-align:top;
+}
+input{
+	border:thin inset #D3D3D3;
+}
+footer{
+	text-align:center;
+	font-size:0.8em;
+	color:silver;
+}
+#blogList li{
+	font-size:1.2em;
+	list-style:none;
+	line-height:2em;
+}
+#blogList span{
+	float:right;
+	color:#6CA6CD;
+	font-size:0.8em;
+	margin:0 0.2em;
+}
+.delete:hover,.edit:hover{
+	cursor:pointer;
+}
+.time{
+	color:grey !important;
+}
+.post{
+	word-break:break-all;
+	white-space:pre-wrap;
+	background-color:#DCDCDC;
+	padding:0.5em 1em;
+	border-radius:0.8%;
+	display:inline-block;
+	margin-bottom:1em;
+}
